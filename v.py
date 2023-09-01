@@ -25,6 +25,9 @@ session.post(login_url, data=login_data)
 response = session.get(index_url)
 print(type(response))
 print(dir(response))
+print(response.json)
+print(response.text)
+print(type(response.text))
 print(response.content.decode('utf-8'))
 
 
